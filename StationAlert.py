@@ -49,33 +49,33 @@ def main():
         s.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
         s.bind(('', 50000))
         rx = s.recvfrom(2048)
-        print('Received:' ,repr(rx))
+        #Left in for socket debug
+        #print('Received:' ,repr(rx))
         #rx = s.recv(1024)
 
-        #for line in rx:
         if "RED" in str(rx):
-            print(" Siren Triggered")
+            print("Red Alert")
             GPIO.output(Relay1, GPIO.HIGH)
             GPIO.output(Relay3, GPIO.HIGH)
-            #timer()
+            print("System Standing By.....")
+            main()
 
-        #for line in rx:
         if "YELLOW" in str(rx):
-            print("Page Received")
+            print("Yellow Alert")
             GPIO.output(Relay1, GPIO.HIGH)
             GPIO.output(Relay2, GPIO.HIGH)
-            #timer()
+            print("System Standing By.....")
+            main()
 
-        #for line in rx:
         if "GREEN" in str(rx):
-            print("Victor QRU Page received")
+            print("Return to Enterprise")
             GPIO.output(Relay1, GPIO.HIGH)
             GPIO.output(Relay2, GPIO.HIGH)
             GPIO.output(Relay3, GPIO.HIGH)
-            #timer()
+            print("System Standing By.....")
+            main()
 
-        #for line in rx:
-        if "CHANGEME" in str(rx):
+        if "BORG" in str(rx):
             print("Relay test")
             GPIO.output(Relay1, GPIO.HIGH)
             GPIO.output(Relay2, GPIO.HIGH)
@@ -99,17 +99,6 @@ def main():
             print(" ")
             print("System Standing By.....")
             main()
-
-
-#def timer():
-#    for remaining in range(120, 0, -1):
-#        sys.stdout.write(str(remaining)+' Seconds Remaining.\r')
-#        sys.stdout.flush()
-#        time.sleep(1)
-
-    sys.stdout.write("\rSystem Standing By....\n")
-    main()
-
 
 def destroy():
     GPIO.output(Relay1, GPIO.HIGH)
