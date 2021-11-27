@@ -69,9 +69,9 @@ def main():
 
         if "GREEN" in str(rx):
             print("Return to Enterprise")
-            GPIO.output(Relay1, GPIO.HIGH)
-            GPIO.output(Relay2, GPIO.HIGH)
-            GPIO.output(Relay3, GPIO.HIGH)
+            GPIO.output(Relay1, GPIO.LOW)
+            GPIO.output(Relay2, GPIO.LOW)
+            GPIO.output(Relay3, GPIO.LOW)
             print("System Standing By.....")
             main()
 
