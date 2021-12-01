@@ -1,6 +1,7 @@
 #!/bin/sh
 # this is built by Alaskaradar with the help of many others that have come before
 # Thank you for your trials and posts online to help me with my project.
+#Python 3
 from __future__ import absolute_import
 from __future__ import print_function
 import time
