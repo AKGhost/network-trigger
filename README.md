@@ -37,19 +37,19 @@ python StationAlert.py</p>
 (Now i suggest installing screen so you can close your ssh window and be able to leave the programming running in the background)</p>
 you should be greated with:</p>
 
-|=====================================================|</p>
-|                 Internet tower light                |</p>
-|-----------------------------------------------------|</p>
-|                                                     |</p>
-|                  Internet monitoring                |</p>
-|                  Remote Light station               |</p>
-|                                                     |</p>
-|                      Raspberry pi                   |</p>
-|                      relay hat                      |</p>
-|                                          Alaskaradar|</p>
-|_____________________________________________________|</p>
-|             System online and Standing by           |</p>
-|_____________________________________________________|</p>
+|=====================================================|
+|                 Internet tower light                |
+|-----------------------------------------------------|
+|                                                     |
+|                  Internet monitoring                |
+|                  Remote Light station               |
+|                                                     |
+|                      Raspberry pi                   |
+|                      relay hat                      |
+|                                          Alaskaradar|
+|_____________________________________________________|
+|             System online and Standing by           |
+|_____________________________________________________|
 
 
 Once this is complete and running </p>
